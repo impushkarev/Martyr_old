@@ -1,0 +1,272 @@
+// Variables
+@import 'variables';
+
+// Font Awesome
+@import url("https://use.fontawesome.com/releases/v5.8.1/css/all.css");
+
+// Templates
+@import 'header';
+@import 'footer';
+
+.hide {
+	display: none !important;
+}
+
+input, button, textarea, select, option {
+    font-family: $font-family-sans-serif; 
+}
+
+.like {
+	top: 10px;
+	left: 10px;
+	border: 0px;
+	outline: 0px;
+	cursor: pointer;
+	font-size: 24px;
+	position: absolute;
+	background-color: transparent;
+}
+.like:hover {
+	color: #ff7373;
+}
+
+.empty {
+    margin: 0 auto;
+    font-size: 34px;
+    font-weight: 100;
+	text-align: center;
+    padding: 70px 120px;
+    letter-spacing: 10px;
+}
+
+.preview {
+    display: flex;
+    min-height: 400px;
+    max-height: 600px;
+    background-size: cover;
+    background-position: center;
+
+    h1 {
+        margin: auto;
+        color: #ffffff;
+        background-color: #000000;
+    }
+}
+
+.content-section {
+	margin: 50px 0 75px;
+}
+
+body {
+	margin: 0 auto;
+	max-width: 1600px;
+	font-family: $font-family-sans-serif;
+	
+	section {
+		h1 {
+			margin-top: 0;
+			font-size: 53px;
+			font-weight: 100;
+			text-align: center;
+			letter-spacing: 20px;
+			text-transform: uppercase;
+		}   
+	}
+
+	.container {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 0 10px;
+		position: relative;
+	}
+
+	form.form {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	
+		.form-group {
+			flex: 0 0 100%;
+			font-size: 28px;
+			margin-bottom: 25px;
+	
+			.with_btn {
+				display: flex;
+				margin-bottom: 5px;
+	
+				p {
+					margin: 0;
+					width: 100%;
+					margin-right: 5px;
+					line-height: 30px;
+					word-break: break-all;
+				}
+			}
+	
+			.form-label {
+				display: block;
+				margin-bottom: 5px;
+				letter-spacing: 10px;
+			}
+	
+			.form-input {
+				width: 100%;
+				outline: 3px;
+				font-size: 20px;
+				padding: 10px 0;
+				transition: .2s;
+				position: relative;
+				letter-spacing: 3px;
+				border: 1px solid #999999;
+			}
+			textarea.form-input {
+				resize: vertical;
+				min-height: 150px;
+				line-height: 25px;
+				padding-bottom: 30px;
+			}
+			textarea.form-input:focus {
+				padding-bottom: 10px;
+				border-bottom: 21px solid #000000;
+			}
+			input.form-input:focus {
+				background: linear-gradient(to top, #000000 0%, #000000 10px, transparent 11px, transparent 100%);
+			}
+			.is-invalid {
+				outline: 3px solid #910000;
+			}
+	
+			select.form-select {
+				width: 100%;
+				outline: 3px;
+				font-size: 20px;
+				padding: 10px 0;
+				transition: .2s;
+				position: relative;
+				letter-spacing: 3px;
+				border: 1px solid #999999;
+			}
+
+			select.form-select[multiple] {
+				min-height: 150px;
+				resize: vertical;
+
+				option {
+					padding: 5px;
+				}
+			}
+		}
+	
+		.button {
+			border: 0;
+			outline: 0;
+			width: 100%;
+			cursor: pointer;
+			text-align: center;
+		}
+	
+		.btn-link {
+			color: #000000;
+			position: relative;
+		}
+		.btn-link:hover:before {
+			top: 5px;
+			left: -20px;
+			content: "";
+			height: 1px;
+			width: 75%;
+			position: absolute;
+			background-color: #000000;
+		}
+	
+		.button_add {
+			width: 45px;
+			height: 45px;
+			cursor: pointer;
+			color: #ffffff;
+			line-height: 45px;
+			text-align: center;
+			background-color: #000000;
+		}
+		.button_add:hover {
+			background-color: #454545;
+		}
+	
+		.button_delete {
+			width: 30px;
+			height: 30px;
+			flex: 0 0 30px;
+			cursor: pointer;
+			color: #ffffff;
+			line-height: 30px;
+			text-align: center;
+			background-color: #910000;
+		}
+		.button_delete:hover {
+			background-color: #cb0000;
+		}
+		
+		.hw {
+			flex: 0 0 49%;
+		}
+	}
+
+	.button-container {
+		display: flex;
+		flex: 1 1 100%;
+		margin-top: 10px;
+	
+		.button {
+			font-size: 20px;
+			color: #ffffff;
+			margin: 0 auto;
+			text-align: right;
+			padding: 15px 65px;
+			letter-spacing: 10px;
+			text-decoration: none;
+			background-color: #000000;
+		}
+		.button:hover {
+			text-decoration: underline;
+		}
+	}
+
+	.alerts {
+		right: 5px;
+		bottom: 5px;
+		z-index: 100;
+		position: fixed;
+	
+		.alert {
+			opacity: 1;
+			width: 200px;
+			z-index: 101;
+			font-size: 16px;
+			transition: .2s;
+			color: #ffffff;
+			padding: 30px 30px;
+			text-align: center;
+			margin-bottom: 5px;
+			position: relative;
+	
+			.close {
+				top: 0;
+				right: 0;
+				width: 20px;
+				height: 20px;
+				font-size: 18px;
+				cursor: pointer;
+				position: absolute;
+			}
+			.close:hover {
+				color: #c1c1c1;
+			}
+		}
+		.alert_success {
+			background-color: #28a745;
+		}
+		.alert_error {
+			background-color: #D93223;
+		}
+	}
+}

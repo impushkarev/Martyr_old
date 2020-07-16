@@ -1,0 +1,121 @@
+header {
+    top: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 102;
+    position: sticky;
+    background-color: #000;
+        
+    .logo {
+        margin-top: 12px;
+    }
+
+    .nav-menu {
+        flex: 1;
+
+        .categories {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            list-style-type: none;
+            justify-content: center;
+
+            a {
+                color: inherit;
+
+                .active:after {
+                    top: 50%;
+                    content: "";
+                    height: 1px;
+                    width: 75%;
+                    position: absolute;
+                    background-color: #fff;
+                }
+
+                li {
+                    height: 70px;
+                    padding: 0 20px;
+                    font-size: 20px;
+                    color: #ffffff;
+                    line-height: 70px;  
+                    position: relative;
+                    letter-spacing: 6px;
+                }
+                li:hover:before {
+                    top: 50px;
+                    left: 60px;
+                    content: "";
+                    height: 1px;
+                    width: 75%;
+                    position: absolute;
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+
+    .shop-buttons {
+        position: relative;
+
+        .search-items {
+            right: 0;
+            display: flex;
+            margin-top: 70px;
+            position: absolute;
+            padding: 10px 15px;
+            background: #f3f3f3;
+        
+            input {
+                border: 0;
+                outline: 0;
+                font-size: 16px;
+                position: relative;
+                padding: 7px 10px 7px 0;
+                background-color: transparent;
+            }
+            input:hover {
+                background: linear-gradient(to bottom, #ffffff 0%, #ffffff 50%, transparent 50.1%, transparent 100%);
+            }
+            input:focus {
+                background: linear-gradient(to bottom, transparent 0%, transparent 50%, #ffffff 50.1%, #ffffff 100%);
+            }
+        
+            button {
+                border: 0;
+                outline: 0;
+                font-size: 16px;
+                cursor: pointer;
+                font-weight: bold;
+                letter-spacing: 3px;
+                background-color: transparent;
+                border-bottom: 1px solid #000;
+            }
+            button:hover {
+                background: linear-gradient(to bottom, #000000 0%, #000000 30%, transparent 30.1%, transparent 100%);
+            }
+        }
+        
+        ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            list-style-type: none;
+
+            a {
+                color: inherit;
+            }
+
+            li {
+                height: 70px;
+                cursor: pointer;
+                padding: 0 15px;
+                font-size: 20px;
+                color: #d4d4d4;
+                line-height: 70px;
+            }
+            li:hover {
+                color: #ffffff;
+            }
+        }
+    }
+}

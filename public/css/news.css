@@ -1,0 +1,60 @@
+section {
+  padding: 50px 0 100px;
+}
+
+.projects-list .container {
+  flex-direction: column;
+}
+
+.projects-list .container .project {
+  padding: 5px;
+  display: flex;
+  color: #000000;
+  margin-bottom: 10px;
+  text-decoration: none;
+  align-items: flex-start;
+}
+
+.projects-list .container .project .project-thumbnail {
+  flex: 1;
+}
+
+.projects-list .container .project .project-thumbnail img {
+  width: 100%;
+}
+
+.projects-list .container .project .project-description {
+  flex: 2;
+}
+
+.projects-list .container .project .project-description .project-description-inner {
+  margin: 25px 100px;
+}
+
+.projects-list .container .project .project-description .project-description-inner .project-title {
+  font-size: 46px;
+  margin-top: 0px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.projects-list .container .project .project-description .project-description-inner .project-date {
+  margin: 0;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: right;
+  text-decoration: underline;
+}
+
+.projects-list .container .project .project-description .project-description-inner .project-preview {
+  margin: 0;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-align: justify;
+}
+
+.projects-list .container .project:hover {
+  background-color: #ececec;
+}
+

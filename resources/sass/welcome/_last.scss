@@ -1,0 +1,36 @@
+.last-collection {
+    padding: 100px 0;
+    margin-top: -70px;
+    position: relative;
+    border-top: 6px solid #000000;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 800px;
+
+    .container
+    {
+        background-size: 600px;
+        flex-direction: column;
+        background-repeat: no-repeat;
+        background-position: right bottom;
+
+        .item {
+            display: flex;
+            margin-bottom: 60px;
+    
+            .desc {
+                margin: 0 auto;
+            }
+
+            .item-container {
+                width: 50%;
+                margin: 0 10px;
+                
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}

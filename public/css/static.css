@@ -1,0 +1,32 @@
+.content-section .container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: justify;
+}
+
+.content-section .container h2 {
+  width: 100%;
+  letter-spacing: 2px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.content-section .container h3 {
+  font-weight: normal;
+}
+
+.content-section .container ul.list li {
+  margin: 15px 0;
+}
+
+.content-section .container ul.list ol li {
+  margin: 5px 0;
+}
+
+.content-section .container form {
+  flex: 0 0 60%;
+  margin: 0 auto;
+  min-width: 300px;
+}
+

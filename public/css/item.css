@@ -1,0 +1,114 @@
+.strike {
+  line-height: 5px;
+  margin-left: -50px;
+  margin-bottom: -10px;
+}
+
+.product {
+  overflow: hidden;
+  position: relative;
+}
+
+.product .images {
+  top: 30px;
+  left: 10px;
+  height: 100%;
+  display: flex;
+  transition: 0.3s;
+  min-height: 300px;
+  max-height: 800px;
+  position: absolute;
+}
+
+.product .images .image {
+  height: 100%;
+  margin: 0 100px 0 0;
+  max-width: calc(100vw - 20px);
+}
+
+.product .images .image img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.product .container {
+  width: 40%;
+  height: 100%;
+  margin-left: auto;
+}
+
+.product .container .product-info {
+  z-index: 1;
+  width: 100%;
+  margin: 20px 0 50px;
+  background-color: #ffffff;
+  box-shadow: -20px 2px 0px 10px black;
+}
+
+.product .container .product-info .product-info-container {
+  font-size: 20px;
+  position: relative;
+  letter-spacing: 3px;
+  padding: 100px 50px;
+}
+
+.product .container .product-info .product-info-container .add-to-cart {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.product .container .product-info .product-info-container .add-to-cart .price {
+  margin: 0;
+  font-size: 40px;
+}
+
+.product .container .product-info .product-info-container .add-to-cart .abtn {
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  margin: 0 10px;
+  font-size: 30px;
+  color: #000000;
+  padding: 10px 0px;
+  position: relative;
+  letter-spacing: 10px;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.product .container .product-info .product-info-container .add-to-cart .abtn:before {
+  top: 30px;
+  width: 100%;
+  height: 1px;
+  content: "";
+  position: absolute;
+  background-color: black;
+}
+
+.product .container .product-info .product-info-container .add-to-cart .abtn:hover:before {
+  top: 40px;
+}
+
+.product .container .product-info .product-info-container h2 {
+  margin: 0 0 15px;
+  font-size: 36px;
+}
+
+.product .container .product-info .product-info-container p {
+  text-align: justify;
+}
+
+.product .container .product-info .product-info-container ul {
+  padding-left: 20px;
+}
+
+.product .container .product-info .product-info-container ul li {
+  margin: 7px 0;
+}
+
+.recommendation {
+  margin: 100px 0 75px;
+}
+
